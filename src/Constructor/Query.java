@@ -1,15 +1,10 @@
 package Constructor;
 
-public class Query {
-	public void setwhere(){
-		
-	}
-	public void setfrom(){
-		
-	}
-	public String executer(){
-	String 	ex="";
-	return ex;
-	}
+public abstract class Query {
+	 protected String query ="";
+	    
+	    public abstract void setWhere(String where);
+	    public abstract void setFrom(String from);
+	    public abstract String Execute();
 
 }
